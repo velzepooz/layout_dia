@@ -321,13 +321,16 @@ body {
 .slider {
   position: relative;
   max-width: 675px;
-  max-height: 675px;
+  max-height: 670px;
   width: 41vw;
-  height: 41vw;
+  height: 40vw;
   border-radius: 30px 0;
+  overflow: hidden;
   background-image: url(../images/slider/slide-img-1.png);
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  -webkit-transition: background-image 300ms ease;
+  transition: background-image 300ms ease; }
   @media (max-width: 860px) {
     .slider {
       display: none; } }
