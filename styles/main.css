@@ -334,7 +334,7 @@ body {
   @media (max-width: 860px) {
     .slider {
       display: none; } }
-  .slider__arrow-left::before {
+  .slider__arrow-left {
     position: absolute;
     top: 85%;
     left: 7%;
@@ -348,18 +348,15 @@ body {
     transition: transform 300ms ease;
     transition: transform 300ms ease, -webkit-transform 300ms ease; }
     @media (max-width: 980px) {
-      .slider__arrow-left::before {
+      .slider__arrow-left {
         left: 5%; } }
     @media (max-width: 886px) {
-      .slider__arrow-left::before {
-        top: 87%;
-        left: 50%;
-        -webkit-transform: translateX(-100%);
-                transform: translateX(-100%); } }
-  .slider__arrow-left:hover::before {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2); }
-  .slider__arrow-right::after {
+      .slider__arrow-left {
+        display: none; } }
+    .slider__arrow-left:hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
+  .slider__arrow-right {
     position: absolute;
     top: 85%;
     left: 15%;
@@ -373,14 +370,11 @@ body {
     transition: transform 300ms ease;
     transition: transform 300ms ease, -webkit-transform 300ms ease; }
     @media (max-width: 886px) {
-      .slider__arrow-right::after {
-        top: 87%;
-        left: 50%;
-        -webkit-transform: translateX(10%);
-                transform: translateX(10%); } }
-  .slider__arrow-right:hover::after {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2); }
+      .slider__arrow-right {
+        display: none; } }
+    .slider__arrow-right:hover {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
   .slider__heading {
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 13px;
@@ -400,10 +394,7 @@ body {
                 transform: translateX(-50%); } }
     @media (max-width: 886px) {
       .slider__heading {
-        top: 80%;
-        left: 50%;
-        -webkit-transform: translateX(-45%);
-                transform: translateX(-45%); } }
+        display: none; } }
   .slider__paragraph {
     font-family: Open Sans, Arial, Helvetica, sans-serif;
     font-weight: 400;
