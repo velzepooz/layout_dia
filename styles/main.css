@@ -1,4 +1,4 @@
-h1, .header__heading {
+.header__heading {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 64px;
   line-height: 68px;
@@ -670,8 +670,10 @@ body {
     height: 24px;
     text-align: center;
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 600px;
+    line-height: 22px;
+    color: #fff;
     font-size: 13px;
     line-height: 24px;
     text-transform: uppercase;
@@ -682,9 +684,14 @@ body {
   .card__points {
     font-family: Open Sans, Arial, Helvetica, sans-serif;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 24px;
     line-height: 150%;
-    color: #6c788b; }
+    color: #6c788b;
+    font-size: 13px;
+    line-height: 150%; }
+    @media (max-width: 860px) {
+      .card__points {
+        font-size: 20px; } }
   .card__link {
     display: inline-block;
     width: 40px;
@@ -766,9 +773,11 @@ body {
     position: relative;
     font-family: Open Sans, Arial, Helvetica, sans-serif;
     font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #fff;
     font-size: 15px;
     line-height: 150%;
-    color: #fff;
     margin-bottom: 64px; }
     @media (max-width: 860px) {
       .features__point {
@@ -1169,12 +1178,12 @@ body {
             align-self: center; } }
   .footer__field-name {
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-weight: 700;
     font-size: 13px;
-    line-height: 19px;
+    font-weight: 700px;
+    line-height: 20px;
     letter-spacing: 3px;
-    text-transform: uppercase;
     color: #fff;
+    text-transform: uppercase;
     opacity: 0.5;
     margin-bottom: 8px; }
   .footer__adress, .footer__phone {
@@ -1203,10 +1212,6 @@ body {
               transform: scale(1.2); }
   .footer__link {
     display: inline-block;
-    font-family: Open Sans, Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 150%;
     background-position: center;
     background-repeat: no-repeat;
     width: 25px;
