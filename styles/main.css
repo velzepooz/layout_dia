@@ -999,6 +999,16 @@ body {
     @media (max-width: 860px) {
       .feedback__paragraph {
         font-size: 20px; } }
+  .feedback__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
 
 .figure {
   -webkit-transition: -webkit-transform 1.5s ease-in;
